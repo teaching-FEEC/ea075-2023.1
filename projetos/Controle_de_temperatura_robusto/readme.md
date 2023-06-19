@@ -13,19 +13,23 @@ O presente projeto foi originado no contexto das atividades da disciplina de gra
 oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dra. Paula Dornhofer Paro Costa, do Departamento de Engenharia de Computação e Automação (DCA) da Faculdade de Engenharia Elétrica e de Computação (FEEC).
 
   
-
-> Incluir nome RA e foco de especialização de cada membro do grupo. Os projetos devem ser desenvolvidos em duplas.
-
 > |Nome | RA | Curso|
 
 > | Felipe dos Reis Lemos | 204069 | Eng. Elétrica|
 
 > | João Paulo Christofolletti | 199681 | Eng. Elétrica|
 >
-  
+> 
+## Arquivos Importantes (:warning: NOVO :warning:)
+
+>[Esquemático em PDF](link para imagens/pdf esquemático)
+>
+>[Lista de Componentes](link para components.md)
+>
+>[PCB](link para imagens/pdf PCB)
   
 
-## Descrição do Projeto
+## Descrição do Projeto (:warning: ATUALIZAR :warning:)
 
 > O mal controle de temperatura pode interferir em diversos processos industriais, especialmente tratando-se de produtos sensíveis a alterações ambientais como os dos setores farmacêutico e alimentício. Logo, o controle dessa variável é fundamental para garantir que o padrão de qualidade seja atingido, pois a falta de controle sobre a temperatura do ambiente pode resultar em desperdício dos produtos, o que significa prejuízos financeiros. Há equipamentos que necessitam também atuar dentro da faixa de temperatura indicada pelos fabricantes, ou poderão apresentar defeitos.
 >
@@ -41,7 +45,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >
 >O valor econômico pode ser calculado a partir da análise de indicadores de desempenho, como o tempo de produção, a maximização do consumo de energia, o consumo de matérias-primas. Dessa forma, é possível determinar o retorno sobre o investimento em um controlador PID de temperatura e compará-lo com outras alternativas de controle de temperatura.
 >
-## Descrição Funcional
+## Descrição Funcional (:warning: ATUALIZAR :warning:)
 >
 ### Funcionalidades
 >
@@ -118,9 +122,9 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 
 >![](https://lh4.googleusercontent.com/2-Qc6JEknqoZsFVLEfL1C0yD5RxjqQ5rzbKLFPHxtnHVWpqCpuINMYjDCzHNdL85RB-CQwJgaGBi5FXKHwUfHJIe94HMGEX_EM6Ca8KaHotyltf360VodMfV41BdMRJKPM72IPSzlVPoP8UeFhnfKFM)
 >
-## Especificações
+## Especificações (:warning: ATUALIZAR :warning:)
 
-### Especificação Estrutural
+### Especificação Estrutural 
 
 > Para cumprir com os objetivos propostos e não tornar nosso projeto muito complexo e caro, decidimos por utilizar o microcontrolador ATmega328P, que é o mesmo utilizado no Arduino. Portanto já existe um grande acervo de materiais disponíveis para consulta e uma grande comunidade que utiliza esse microcontrolador, assim facilita o desenvolvimento deste projeto. 
 >
@@ -139,7 +143,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > Vamos utilizar também um cristal oscilador de 16 MHz como clock 
 
 
-### Especificação de Algoritmos 
+### Especificação de Algoritmos (:warning: ATUALIZAR :warning:)
 
 >A especificação dos algoritmos é ilustrada em 3 fluxogramas:
 >
@@ -170,7 +174,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >
 >![](leitura_controle.drawio.png)
 
-## Referências
+## Referências (:warning: ATUALIZAR :warning:)
 > -  SILVA, Italo. UTILIZAÇÃO DE UM CONTROLE PID DE TEMPERATURA PARA ESTUDO DE RESFRIAMENTO TERMOELÉTRICO. 2022. Monografia (Graduação em Engenharia Mecânica) - UFPE, [S. l.], 2022. Disponível em: https://repositorio.ufpe.br/bitstream/123456789/47590/1/TCC%20%C3%8Dtalo%20Souza%20da%20Silva.pdf. Acesso em: 2 abr. 2023.
 >
 > - PRATA, Tiago; CAMPO, Alexandre. Desenvolvimento e aplicação de controle preditivo baseado em modelo (MPC). Sociedade Brasileira de Automática, [S. l.], p. Vol 2 No 1, 8 dez. 2020. DOI https://doi.org/10.48011/asba.v2i1.1187. Disponível em: https://www.sba.org.br/open_journal_systems/index.php/cba/article/view/1187. Acesso em: 2 abr. 2023.
