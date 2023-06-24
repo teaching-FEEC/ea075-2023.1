@@ -29,8 +29,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >[PCB](link para imagens/pdf PCB)
   
 
-## Descrição do Projeto (:warning: ATUALIZAR :warning:)
-
+## Descrição do Projeto 
 > O mal controle de temperatura pode interferir em diversos processos industriais, especialmente tratando-se de produtos sensíveis a alterações ambientais como os dos setores farmacêutico e alimentício. Logo, o controle dessa variável é fundamental para garantir que o padrão de qualidade seja atingido, pois a falta de controle sobre a temperatura do ambiente pode resultar em desperdício dos produtos, o que significa prejuízos financeiros. Há equipamentos que necessitam também atuar dentro da faixa de temperatura indicada pelos fabricantes, ou poderão apresentar defeitos.
 >
 > Diante disso, este projeto tem como objetivo realizar o controle de temperatura de um determinado ambiente de forma robusta utilizando a média ponderada de quatro sensores de temperaturas espalhados pelo ambiente e usando um controle PID. Pode-se ser desde um ambiente industrial, onde se encontra uma linha de produção que necessita de uma temperatura uniforme ao longo de todo o percurso, por exemplo, ou um ambiente residencial, o qual pode ser um cômodo ou a casa inteira. Portanto, é esperado uma maximização da eficiência energética e consequentemente o controle mais preciso e uniforme da temperatura do local escolhido pelo cliente, garantindo assim maior qualidade sobre seu produto.
@@ -67,7 +66,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >
 > Módulo de comunicação Wi-Fi
 >
-> A princípio o microcontrolador principal será o ATMEGA328P, porém ao longo do desenvolvimento pode ser que outro microcontrolador atenda melhor o objetivo do projeto
+> O microcontrolador principal será o ATMEGA328P, pois ele atende muito bem os objetivos do projeto
 >
 > Circuito para codificar as informações enviadas para a nuvem.
 >
@@ -118,7 +117,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > Botões, display e LEDs para a comunicação com o usuário
 >
 >Controlador:
-> Microcontrolador ATmega (a princípio) que realiza os cálculos
+> Microcontrolador ATmega que realiza os cálculos
 
 >![](https://lh4.googleusercontent.com/2-Qc6JEknqoZsFVLEfL1C0yD5RxjqQ5rzbKLFPHxtnHVWpqCpuINMYjDCzHNdL85RB-CQwJgaGBi5FXKHwUfHJIe94HMGEX_EM6Ca8KaHotyltf360VodMfV41BdMRJKPM72IPSzlVPoP8UeFhnfKFM)
 >
@@ -134,13 +133,17 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 >
 > Para poder medir a temperatura do ambiente escolhemos o termômetro digital DS18B20, pois ele não necessita de nenhum módulo adicional, ou seja, pode ser conectado dirematente nas entradas GPIO's do microcontrolador que iremos utilizar e é relativamente barato. Para que seja possível essa comunicação entre o sensor e o ATmega teremos que definir as entradas do microcontrolador e utilizaremos bibliotecas disponíves e vamos ter que definir os endereços de momória, uma vez que, pretendemos utilizar uma única porta para os quatros sensores.
 > 
-> Para mostrar as informações, iremos utilizar um display OLED 128x64, pois ele consegue mostrar diversar informações utilizando apenas duas portas de dados e seu custo é relativamente baixo. 
+> Para mostrar as informações, iremos utilizar um display OLED 128x64 que possui compatibilidade com o microcontrolador que escolhemos, pois ele consegue mostrar diversar informações utilizando apenas duas portas de dados e seu custo é relativamente baixo.
+> 
+> Iremos utilizar um LED verde, um amarelo e um vermelho para poder sinalizar o usuário o estado do dispositivo como foi descrito anteriormente. E também terá os botões para que o usuário possa realizar alguns comandos.
 > 
 > O módulo Wi-Fi será o ESP8266, o qual possui compatibilidade com o microcontrolador que estamos utilizando e há diversos materiais na internet de como realizar as configurações necessárias para poder utilizá-lo com o ATmega. Para poder conectá-lo, vamos ter que definir uma porta como TXD e outra como RXD para receber e enviar os dados via Wi-Fi
 > 
 > O acionamento do sistema de refrigeração será feito através de um sinal PWM de saída para os refrigerados
 > 
-> Vamos utilizar também um cristal oscilador de 16 MHz como clock 
+> Vamos utilizar também um cristal oscilador de 16 MHz como clock
+> 
+> Todos os links com os datasheets dos componesntes principais que iremos utilizar estão em referências
 
 
 ### Especificação de Algoritmos (:warning: ATUALIZAR :warning:)
@@ -184,5 +187,10 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 > - Datasheet de termômetro: https://pdf1.alldatasheet.com/datasheet-pdf/view/58557/DALLAS/DS18B20.html
 > 
 > - Link do módulo Wi-Fi: https://nurdspace.nl/images/e/e0/ESP8266_Specifications_English.pdf
+>   
+> - Link do display OLED:https://www.usinainfo.com.br/display-arduino/display-oled-096-spi-128x64-para-arduino-2831.html
+> - Datasheet do display: https://www.usinainfo.com.br/index.php?controller=attachment&id_attachment=131
+> - 
+> - Datasheet do cristal oscilador: https://www.petermann-technik.de/fileadmin/documents/datasheets/Quartz-Crystals/SMD-QUARTZ-CRYSTAL-SMD0603-4.pdf
 
 
