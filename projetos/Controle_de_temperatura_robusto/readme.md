@@ -22,11 +22,11 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
  
 ## Arquivos Importantes (:warning: NOVO :warning:)
 
->[Esquemático em PDF](link para imagens/pdf esquemático)
->
->[Lista de Componentes](link para components.md)
->
->[PCB](link para imagens/pdf PCB)
+Esquemático em PDF: colocar o link para imagens/pdf esquemático aqui
+
+Lista de Componentes: colocar o link para components.md aqui
+
+PCB: colocar o link para imagens/pdf PCB aqui
   
 
 ## Descrição do Projeto 
@@ -44,7 +44,7 @@ São sistemas que requerem controle preciso de temperatura. O controlador PID é
 
 O valor econômico pode ser calculado a partir da análise de indicadores de desempenho, como o tempo de produção, a maximização do consumo de energia, o consumo de matérias-primas. Dessa forma, é possível determinar o retorno sobre o investimento em um controlador PID de temperatura e compará-lo com outras alternativas de controle de temperatura.
 
-## Descrição Funcional (:warning: ATUALIZAR :warning:)
+## Descrição Funcional 
 
 ### Funcionalidades
 
@@ -186,7 +186,7 @@ Atualização dos valores do controlador.
 
 - PRATA, Tiago; CAMPO, Alexandre. Desenvolvimento e aplicação de controle preditivo baseado em modelo (MPC). Sociedade Brasileira de Automática, [S. l.], p. Vol 2 No 1, 8 dez. 2020. DOI https://doi.org/10.48011/asba.v2i1.1187. Disponível em: https://www.sba.org.br/open_journal_systems/index.php/cba/article/view/1187. Acesso em: 2 abr. 2023.
 
-- Datasheet do micocontrolador ATMEGA328P:https://www.ic-components.hk/files/cb/DEV-14083.pdf
+- Datasheet do micocontrolador ATMEGA328P: https://www.ic-components.hk/files/cb/DEV-14083.pdf
 
 - Datasheet de termômetro: https://pdf1.alldatasheet.com/datasheet-pdf/view/58557/DALLAS/DS18B20.html
  
