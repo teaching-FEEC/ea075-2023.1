@@ -50,9 +50,9 @@ O valor econômico pode ser calculado a partir da análise de indicadores de des
 
 As funcionalidades principais do projeto são:
 
-1. Fazer a média ponderada dos quatros sensores de temperaturas, pois assim há uma garantia maior de que o ambiente está numa temperatura uniforme.
+1. Fazer a média ponderada dos quatros sensores de temperaturas, pois assim há uma garantia maior de que o ambiente está numa temperatura uniforme
 
-2. Com base no resultado da média da temperatura do ambiente, o sistema identifica se há necessidade ou não de atuar no sistema de refrigeração para manter a temperatura mais próxima da requerida pelo cliente.
+2. Com base no resultado da média da temperatura do ambiente, o sistema identifica se há necessidade ou não de atuar no sistema de refrigeração para manter a temperatura mais próxima da requerida pelo usuário
 
 3. Há uma interface com o usuário para que ele consiga estabelecer as temperaturas desejadas e, caso haja necessidade, pode resetar o sistema e iniciar novamente.
 
@@ -60,15 +60,15 @@ As funcionalidades principais do projeto são:
 
 5. Indicação por leds de quando o sistema está ou não funcionando corretamente
 
-6. Não exige uma curva de aprendizado grande do usuário, pois todo o sistema será intuitivo e de fácil entendimento e operação.
+6. Não exige uma curva de aprendizado grande do usuário, pois todo o sistema será intuitivo e de fácil entendimento e operação
  
 ### Configurabilidade
 
 Módulo de comunicação Wi-Fi
 
-O microcontrolador principal será o ATMEGA328P, pois ele atende muito bem os objetivos do projeto
+O microcontrolador será o ATMEGA328P, pois ele atende muito bem os objetivos do projeto
 
-Circuito para codificar as informações enviadas para a nuvem.
+Circuito para codificar as informações enviadas para a nuvem. (retirar?)
 
 Leds de sinalização, sendo um verde indicando que o sistema está operando corretamente, outro amarelo indicando que o sistema está pausado esperando o usuário iniciá-lo e um vermelho indicando que o sistema não está funcionando corretamente e precisa ser reiniciado.
 
@@ -123,7 +123,7 @@ Controlador:
 
 ![](https://lh4.googleusercontent.com/2-Qc6JEknqoZsFVLEfL1C0yD5RxjqQ5rzbKLFPHxtnHVWpqCpuINMYjDCzHNdL85RB-CQwJgaGBi5FXKHwUfHJIe94HMGEX_EM6Ca8KaHotyltf360VodMfV41BdMRJKPM72IPSzlVPoP8UeFhnfKFM)
 
-## Especificações (:warning: ATUALIZAR :warning:)
+## Especificações 
 
 ### Especificação Estrutural 
 
@@ -136,8 +136,10 @@ A distribuição dos quatro sensores de temperatura será feita de modo que a m�
 Para poder medir a temperatura do ambiente escolhemos o termômetro digital DS18B20, pois ele não necessita de nenhum módulo adicional, ou seja, pode ser conectado dirematente nas entradas GPIO's do microcontrolador que iremos utilizar e é relativamente barato. Para que seja possível essa comunicação entre o sensor e o ATmega teremos que definir as entradas do microcontrolador e utilizaremos bibliotecas disponíves e vamos ter que definir os endereços de momória, uma vez que, pretendemos utilizar uma única porta para os quatros sensores.
  
 Para mostrar as informações, iremos utilizar um display OLED 128x64 que possui compatibilidade com o microcontrolador que escolhemos, pois ele consegue mostrar diversar informações utilizando apenas duas portas de dados e seu custo é relativamente baixo.
+
+O teclacdo númerico escolhido foi um do tipo matricial por ele possuir um custo baixo e nos da diversas opções de implementação e para o usuário final ele é muito simples de operar
  
-Iremos utilizar um LED verde, um amarelo e um vermelho para poder sinalizar o usuário o estado do dispositivo como foi descrito anteriormente. E também terá os botões para que o usuário possa realizar alguns comandos.
+Iremos utilizar um LED verde, um amarelo e um vermelho para poder sinalizar o usuário o estado do dispositivo como foi descrito anteriormente. E também terá os botões para que o usuário possa realizar alguns comandos, além do teclado numérico.
  
 O módulo Wi-Fi será o ESP8266, o qual possui compatibilidade com o microcontrolador que estamos utilizando e há diversos materiais na internet de como realizar as configurações necessárias para poder utilizá-lo com o ATmega. Para poder conectá-lo, vamos ter que definir uma porta como TXD e outra como RXD para receber e enviar os dados via Wi-Fi
  
@@ -145,10 +147,10 @@ O acionamento do sistema de refrigeração será feito através de um sinal PWM 
  
 Vamos utilizar também um cristal oscilador de 16 MHz como clock
  
-Todos os links com os datasheets dos componesntes principais que iremos utilizar estão em referências
+Todos os links com os datasheets ou especificações dos componesntes principais que iremos utilizar estão em referências
 
 
-### Especificação de Algoritmos (:warning: ATUALIZAR :warning:)
+### Especificação de Algoritmos 
 
 A especificação dos algoritmos é ilustrada em 3 fluxogramas:
 
@@ -179,7 +181,7 @@ Atualização dos valores do controlador.
 
 ![](leitura_controle.drawio.png)
 
-## Referências (:warning: ATUALIZAR :warning:)
+## Referências 
 -  SILVA, Italo. UTILIZAÇÃO DE UM CONTROLE PID DE TEMPERATURA PARA ESTUDO DE RESFRIAMENTO TERMOELÉTRICO. 2022. Monografia (Graduação em Engenharia Mecânica) - UFPE, [S. l.], 2022. Disponível em: https://repositorio.ufpe.br/bitstream/123456789/47590/1/TCC%20%C3%8Dtalo%20Souza%20da%20Silva.pdf. Acesso em: 2 abr. 2023.
 
 - PRATA, Tiago; CAMPO, Alexandre. Desenvolvimento e aplicação de controle preditivo baseado em modelo (MPC). Sociedade Brasileira de Automática, [S. l.], p. Vol 2 No 1, 8 dez. 2020. DOI https://doi.org/10.48011/asba.v2i1.1187. Disponível em: https://www.sba.org.br/open_journal_systems/index.php/cba/article/view/1187. Acesso em: 2 abr. 2023.
@@ -190,9 +192,12 @@ Atualização dos valores do controlador.
  
 - Link do módulo Wi-Fi: https://nurdspace.nl/images/e/e0/ESP8266_Specifications_English.pdf
    
-- Link do display OLED:https://www.usinainfo.com.br/display-arduino/display-oled-096-spi-128x64-para-arduino-2831.html
+- Link do display OLED: https://datasheethub.com/ssd1306-128x64-mono-0-96-inch-i2c-oled-display/
+  
 - Datasheet do display: https://www.usinainfo.com.br/index.php?controller=attachment&id_attachment=131
  
-- Datasheet do cristal oscilador: https://www.petermann-technik.de/fileadmin/documents/datasheets/Quartz-Crystals/SMD-QUARTZ-CRYSTAL-SMD0603-4.pdf
+- Datasheet do cristal oscilador: https://www.eletrogate.com/cristal-oscilador-16mhz
+
+- Link do teclado numérico: https://www.robocore.net/botao-chave/teclado-matricial-de-membrana-16-teclas
 
 
