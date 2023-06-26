@@ -23,7 +23,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 
 Esquemático em PDF: colocar o link para imagens/pdf esquemático aqui
 
-Lista de Componentes: colocar o link para components.md aqui
+Lista de Componentes: https://github.com/JoaoPauloChristofolletti/ea075-2023.1/blob/main/projetos/Controle_de_temperatura_robusto/Lista_de_componentes
 
 PCB: colocar o link para imagens/pdf PCB aqui
   
