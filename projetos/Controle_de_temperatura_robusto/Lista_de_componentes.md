@@ -14,3 +14,5 @@
 - 1 conector para conectar a alimentação para energizar todo o circuito;
 - 1 transistor L7805 para o reguador de tensão de 5V;
 - 1 transistor LM1117 para o regulador de tensão de 3.3V
+
+  OBS: os links para os datasheet dos principais componetes estão em referência do arquivo readme.md
