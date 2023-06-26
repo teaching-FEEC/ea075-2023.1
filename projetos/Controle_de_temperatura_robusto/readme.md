@@ -21,11 +21,11 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
  
 ## Arquivos Importantes (:warning: NOVO :warning:)
 
-Esquemático em PDF: colocar o link para imagens/pdf esquemático aqui
+Esquemático em PDF: https://drive.google.com/drive/folders/1psIWRqpMZ8m5IryysbpZkoGed2PQm9Vj?usp=drive_link
 
 Lista de Componentes: https://github.com/JoaoPauloChristofolletti/ea075-2023.1/blob/main/projetos/Controle_de_temperatura_robusto/Lista_de_componentes
 
-PCB: colocar o link para imagens/pdf PCB aqui
+PCB: https://drive.google.com/drive/folders/1PhZeodno1dpjqo32BKYxaNE4ILYXM0Dg?usp=drive_link
   
 
 ## Descrição do Projeto 
