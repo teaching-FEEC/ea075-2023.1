@@ -19,7 +19,7 @@ oferecida no primeiro semestre de 2023, na Unicamp, sob supervisão da Profa. Dr
 | João Paulo Christofolletti | 199681 | Eng. Elétrica|
 
  
-## Arquivos Importantes (:warning: NOVO :warning:)
+## Arquivos Importantes 
 
 Esquemático em PDF: https://drive.google.com/drive/folders/1psIWRqpMZ8m5IryysbpZkoGed2PQm9Vj?usp=drive_link
 
@@ -67,7 +67,6 @@ Módulo de comunicação Wi-Fi
 
 O microcontrolador será o ATMEGA328P, pois ele atende muito bem os objetivos do projeto
 
-Circuito para codificar as informações enviadas para a nuvem. (retirar?)
 
 Leds de sinalização, sendo um verde indicando que o sistema está operando corretamente, outro amarelo indicando que o sistema está pausado esperando o usuário iniciá-lo e um vermelho indicando que o sistema não está funcionando corretamente e precisa ser reiniciado.
 
